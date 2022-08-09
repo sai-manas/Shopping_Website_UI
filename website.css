@@ -1,0 +1,552 @@
+body {
+   
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+.nav_bar{
+    background-color: rgba(4, 238, 126, 0.9);
+    margin: auto;
+    padding: auto;
+    width:100%;
+}
+
+.nav_container{
+    width: 81%;
+    margin: auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+/*middle section in NAV*/
+.search_form{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#search{
+    width: 500px;
+    height: 35px;
+    background: #FFFFFF;
+    border-style: hidden;
+    border-radius: 20cm;
+}
+#Searchings{
+    position: absolute;
+    height: 35px;
+    background: #FFFFFF;
+    border-style: hidden;
+    border-radius: 20cm;
+   
+}
+#Searchings:hover {
+    background-color:  rgba(37, 152, 186, 0.9);
+}
+
+/*right section in NAV*/
+#LoginSign{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#login{
+    background-color: rgba(217, 217, 217, 1);
+    width: 90px;
+    height: 35px;
+    border-style: hidden;
+    border-radius: 8px;
+}
+.nav_bar .nav_container #LoginSign #login b:hover{color:blue;}
+
+#sign_up{
+    background-color: rgba(0, 0, 0, 1);
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+}
+.nav_bar .nav_container #sign_up b{
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.nav_bar .nav_container #LoginSign #sign_up b:hover{color: rgba(4, 238, 126, 0.9)}
+
+#cart{
+    display: flex;
+    align-items: center;
+}
+.nav_bar .nav_container #cart a :hover{color:blue;}
+
+#cart_icon{
+    height: 35px;
+    border-style: hidden;
+    background-color: rgba(4, 238, 126, 0.9);
+}
+#cart_icon:hover{background-color: rgba(37, 152, 186, 0.9);}
+
+.nav_bar .nav_container a{
+    color: black;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.nav_bar .nav_container a :hover{color:blue;}
+
+/*2 nd section*/
+
+.second_section{
+    background-color:rgba(238, 238, 238, 1);
+    padding: 1% 0%;
+    padding-bottom: 0%;
+    display: flex;
+
+}
+.second_section1{
+    height: 160px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0% 8%;
+}
+.second_section .second_section1 li img{
+    height: 110px;
+}
+
+ul li{
+    list-style: none;
+}
+.second_section .second_section1 li p:hover{color: blue;}
+
+/*3 rd section*/
+.third_section{
+    height: 20%;
+}
+.third_section .big-container .container .info h4{
+    color: gray;
+}
+
+.third_section .big-container .container .info h1{
+    color:rgba(4, 238, 126, 0.9);
+}
+.big-container{
+    background-color: white;
+    width: 200%;
+    -webkit-animation: moving1 7s ease-in infinite alternate;
+    animation: moving1 6s ease-in infinite alternate;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row-reverse;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+   
+
+}
+@keyframes moving1{
+0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+30% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+50% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+}
+
+100% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+}
+}
+
+.big-container .container{
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 7%;
+}
+.third_section .big-container .container  img{
+    width: 33%;
+    margin-left: 5em;
+   
+}
+.third_section .big-container .container .info{
+    width: 50%;
+}
+.third_section .big-container .container .info button{
+    background-color: black;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+.third_section .big-container .container .info button :hover{
+
+    color:rgba(4, 238, 126, 0.9);
+}
+
+/*4 th section*/
+.fourth_section{
+    background-color: rgba(238, 238, 238, 1);
+    padding: 2% 2%;
+    padding-bottom: 0.5%;
+}
+
+.fourth_section .today_container{
+    background-color: white;
+    padding: 30px;
+    padding-top: 15px;
+    
+}
+.fourth_section .today_container .today_deal{
+    display: flex;
+}
+.fourth_section .today_container .today_deal .product1{
+    outline: 10px white solid;
+    margin-right: 8px;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 2em;
+}
+.fourth_section .today_container .today_deal .product1 .product1_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.fourth_section .today_container .today_deal .product1 .product1_info button{
+    background-color: red;
+    color: white;
+    border-style: hidden;
+    
+}
+.fourth_section .today_container .today_deal .product1 .product1_info p{
+    padding-top: 1em;
+    color: red;
+}
+
+/*4.1 (5th) section*/
+.fourth_1{
+    display: flex;
+    padding-top: 2%;
+    
+
+}
+
+.fourth_1 .fourth_1container{
+    background-color: white;
+    padding: 2% 2%;
+    border: 10px solid rgba(238, 238, 238, 1) ;
+    border-right: 19.5px solid rgba(238, 238, 238, 1);
+    border-left: 19.5px solid rgba(238, 238, 238, 1);
+}
+.fourth_1 .fourth_1container .fourth_rows{
+    display: flex;
+    
+}
+
+.fourth_1 .fourth_1container .fourth_1container_products_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth_1 .fourth_1container .fourth_1container_products_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth_1 .fourth_1container .fourth_1container_products_1 img{
+    height: 170px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-bottom: 25px;
+}
+.fourth_1 .fourth_1container .fourth_1container_products_2 img{
+    height: 170px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-bottom: 25px;
+ }
+ .fourth_1 .fourth_1container .fourth_1container_products_1_Tv img{
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-bottom: 25px;
+ }
+
+ .fourth_1 .fourth_1container .fourth_1container_products_2_Tv img{
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-bottom: 25px;
+ }
+
+/*4.2 (6th) section*/
+ .fourth_2{
+    background-color: white;
+    padding: 1%;
+    padding-left: 2%;
+    margin: 2.5%;
+    
+ }
+.fourth_2 .fourth_2_1{
+    display: flex;
+    align-items: center;
+    
+}
+.fourth_2 .fourth_2_1 button{
+    padding: 2px 2%;
+    background-color: rgba(4, 238, 126, 0.7);
+    border: none;
+    margin-left:2% ;
+}
+.fourth_2 .fourth_2_1 button :hover{
+    color: blue;
+}
+.fourth_2 .fourth_2container{
+    display: flex;
+    align-items: center;
+ }
+
+.fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info{
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+    font-size: smaller;
+    margin-right: 35px;
+ }
+.fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info .review{
+    display: flex;
+    align-items: center;
+ }
+.fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info .review p{
+    padding-top: 1em;
+ }
+ .fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info p:hover{
+    color: blue;
+ }
+.fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info .price del{
+    color: red;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(56, 53, 66);
+    width: 100%;
+}
+
+footer button{
+    width: 100%;
+    color: white;
+    background-color: rgb(80, 72, 90);
+    border-style: none;
+}
+footer button:hover{color: rgba(4, 238, 126, 0.9)}
+
+footer .footer_container .thanks p{
+    color: rgba(4, 238, 126, 0.9);  
+}
+footer .footer_container .footer_content .footer_content_1 ul h5{
+    color: gainsboro;
+    border-bottom: 2px solid rgba(4, 238, 126, 0.9);
+}
+footer .footer_container .footer_content .footer_content_1{
+    padding-top: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+footer .footer_container .footer_content .footer_content_1 ul li{
+    color: white;
+    list-style: none;
+}
+
+footer .footer_container .footer_content{
+    display: flex;
+}
+.bbb{
+    border: 2px solid rgba(4, 238, 126, 0.9);
+
+}
+.footer_icons{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer_icons img{
+    margin-top: 1%;
+    margin-right: 1.5%;
+}
+.thanks{
+    margin-top: 2%;
+    color: white;
+}
+
+/*login modal*/
+
+.login_modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.login_modal .login_content{
+    width: 500px;
+    height: 650px;
+    background-color: rgba(238, 238, 238, 1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login_modal .login_content h1{
+    padding-bottom: 50px;
+}
+.login_modal .login_content img{
+    width: 2em;
+    position: absolute;
+    top: 80px;
+    right: 520px;
+    cursor: pointer;
+}
+.login_modal .login_content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_modal .login_content form input:focus {
+    color: white;
+}
+.login_pad{
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: rgba(34, 73, 87, 1);
+    padding: 2%;
+}
+.login_modal .login_content form input::placeholder{
+    color: white;
+}
+.login_modal .login_content form .terms{
+    display: flex;
+    align-items: baseline;
+}
+.terms p{
+    margin-right: 50px;
+}
+.terms u p{
+    margin-right: -20px;
+    cursor: pointer;
+}
+.terms u p:hover{color: blue;}
+.login_modal .login_content form a .button_pad{
+    width: 300px;
+    border-style: none;
+    background-color: rgba(32, 223, 127, 1);
+    padding: 2%;
+    border-radius: 10px;
+}
+.login_modal .login_content form a .button_pad:hover{
+    color: blue;
+    background-color: white;
+}
+
+/*sign up modal*/
+.sign_modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sign_modal .sign_content{
+    width: 500px;
+    height: 650px;
+    background-color: rgba(238, 238, 238, 1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sign_modal .sign_content img{
+    width: 2em;
+    position: absolute;
+    top: 80px;
+    right: 520px;
+    cursor: pointer;
+}
+.sign_modal .sign_content h1{
+    padding-bottom: 50px;
+    
+}
+.sign_modal .sign_content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign_modal .sign_content form input:focus {
+    color: white;
+}
+.sign_pad{
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: rgba(34, 73, 87, 1);
+    padding: 2%;
+}
+.sign_modal .sign_content form input::placeholder{
+    color: white;
+}
+.sign_modal .sign_content form a .button_pad{
+    width: 300px;
+    border-style: none;
+    background-color: rgba(32, 223, 127, 1);
+    padding: 2%;
+    border-radius: 10px;
+}
+.sign_modal .sign_content form a .button_pad:hover{
+    color: blue;
+    background-color: white;
+}
+.sign_modal .sign_content form p{
+    margin-top: -6%;
+}
