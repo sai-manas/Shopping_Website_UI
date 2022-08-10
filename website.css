@@ -4,20 +4,14 @@ body {
   }
 .nav_bar{
     background-color: rgba(4, 238, 126, 0.9);
-    margin: auto;
-    padding: auto;
     width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 6rem;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.nav_container{
-    width: 81%;
-    margin: auto;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5em 0;
-}
 /*middle section in NAV*/
 .search_form{
     display: flex;
@@ -58,7 +52,7 @@ body {
     border-style: hidden;
     border-radius: 8px;
 }
-.nav_bar .nav_container #LoginSign #login b:hover{color:blue;}
+.nav_bar  #LoginSign #login b:hover{color:blue;}
 
 #sign_up{
     background-color: rgba(0, 0, 0, 1);
@@ -66,19 +60,19 @@ body {
     height: 35px;
     border-radius: 8px;
 }
-.nav_bar .nav_container #sign_up b{
+.nav_bar  #sign_up b{
     color: white;
     text-decoration: none;
     border: none;
     outline: none;
 }
-.nav_bar .nav_container #LoginSign #sign_up b:hover{color: rgba(4, 238, 126, 0.9)}
+.nav_bar #LoginSign #sign_up b:hover{color: rgba(4, 238, 126, 0.9)}
 
 #cart{
     display: flex;
     align-items: center;
 }
-.nav_bar .nav_container #cart a :hover{color:blue;}
+.nav_bar  #cart a :hover{color:blue;}
 
 #cart_icon{
     height: 35px;
@@ -87,13 +81,13 @@ body {
 }
 #cart_icon:hover{background-color: rgba(37, 152, 186, 0.9);}
 
-.nav_bar .nav_container a{
+.nav_bar  a{
     color: black;
     text-decoration: none;
     border: none;
     outline: none;
 }
-.nav_bar .nav_container a :hover{color:blue;}
+.nav_bar  a :hover{color:blue;}
 
 /*2 nd section*/
 
@@ -224,16 +218,24 @@ ul li{
 }
 .fourth_section .today_container .today_deal{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 .fourth_section .today_container .today_deal .product1{
-    outline: 10px white solid;
-    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
     background-color: rgba(217, 217, 217, 1);
-    padding: 2em;
+    padding: 1rem;
+    width: 20%;
+    min-width: 150px
 }
 .fourth_section .today_container .today_deal .product1 .product1_info{
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-evenly;
     
 }
@@ -248,12 +250,18 @@ ul li{
     padding-top: 1em;
     color: red;
 }
+.product1-img{
+    width: 10rem;
+}
 
 /*4.1 (5th) section*/
 .fourth_1{
     display: flex;
     padding-top: 2%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
 
 }
 
@@ -261,8 +269,9 @@ ul li{
     background-color: white;
     padding: 2% 2%;
     border: 10px solid rgba(238, 238, 238, 1) ;
-    border-right: 19.5px solid rgba(238, 238, 238, 1);
-    border-left: 19.5px solid rgba(238, 238, 238, 1);
+    border-right: 10.5px solid rgba(238, 238, 238, 1);
+    border-left: 10.5px solid rgba(238, 238, 238, 1);
+    max-width: 30%;
 }
 .fourth_1 .fourth_1container .fourth_rows{
     display: flex;
@@ -271,15 +280,15 @@ ul li{
 
 .fourth_1 .fourth_1container .fourth_1container_products_1{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+.fourth_1_container_img{
+    max-width: 40%;
+    margin: 0.5rem;
+    min-height: 130px;
 }
 
-.fourth_1 .fourth_1container .fourth_1container_products_2{
-    display: flex;
-    flex-direction: column;
-}
-
-.fourth_1 .fourth_1container .fourth_1container_products_1 img{
+/* .fourth_1 .fourth_1container .fourth_1container_products_1 img{
     height: 170px;
     margin-top: 20px;
     margin-right: 30px;
@@ -292,8 +301,8 @@ ul li{
     margin-right: 30px;
     margin-left: 30px;
     padding-bottom: 25px;
- }
- .fourth_1 .fourth_1container .fourth_1container_products_1_Tv img{
+ } */
+ /* .fourth_1 .fourth_1container .fourth_1container_products_1_Tv img{
     height: 150px;
     margin-top: 20px;
     margin-right: 30px;
@@ -307,7 +316,7 @@ ul li{
     margin-right: 30px;
     margin-left: 30px;
     padding-bottom: 25px;
- }
+ } */
 
 /*4.2 (6th) section*/
  .fourth_2{
@@ -333,7 +342,12 @@ ul li{
 }
 .fourth_2 .fourth_2container{
     display: flex;
-    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .fourth_2 .fourth_2container .fourth_2container_product{
+    max-width: 13rem;
  }
 
 .fourth_2 .fourth_2container .fourth_2container_product .fourth_2container_product_info{
